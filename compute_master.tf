@@ -80,8 +80,8 @@ provisioner "file" {
       }  
   }
 provisioner "file" {
-      source      = "files/mysqld.conf"
-      destination = "mysqld.conf"
+      source      = "files/mysqld.cnf"
+      destination = "mysqld.cnf"
       connection {
          type = "ssh"
          user = "vitorllavor"
