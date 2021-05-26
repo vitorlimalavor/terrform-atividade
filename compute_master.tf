@@ -25,6 +25,10 @@ allow {
     protocol = "tcp"
     ports    = ["22"]
   }
+  allow{
+    protocol = "tcp"
+    ports    = ["3306"] 
+}
   source_ranges = [ "0.0.0.0/0"] 
   source_tags = ["ssh"]
 }
